@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Logs
+logs/
+
+# Airflow SQLite DB (如果有用本地 sqlite 时)
+airflow.db
+
+# Docker files
+.env
+
+# VSCode config
+.vscode/
