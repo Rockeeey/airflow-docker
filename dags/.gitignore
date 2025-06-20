@@ -1,4 +1,4 @@
-# Python
+# Python cache
 __pycache__/
 *.pyc
 *.pyo
@@ -7,11 +7,15 @@ __pycache__/
 # Logs
 logs/
 
-# Airflow SQLite DB (如果有用本地 sqlite 时)
+# Airflow local DB
 airflow.db
 
-# Docker files
+# Docker environment files
 .env
 
-# VSCode config
+# VSCode project settings
 .vscode/
+
+# dbt build artifacts
+dbt/target/
+dbt/dbt_packages/
