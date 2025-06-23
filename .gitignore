@@ -1,0 +1,27 @@
+# Airflow logs
+logs/
+
+# dbt artifacts
+dbt/dbt_modules/
+dbt/target/
+dbt/logs/
+dbt/.dbt/
+
+# Python virtual environment
+venv/
+.env/
+
+# VSCode local config
+.vscode/
+
+# Python bytecode
+__pycache__/
+*.pyc
+
+# Docker artifacts (optional)
+*.pid
+*.log
+
+# OS specific
+.DS_Store
+Thumbs.db
