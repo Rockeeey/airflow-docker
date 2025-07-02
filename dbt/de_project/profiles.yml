@@ -9,7 +9,7 @@ de_project:
       role: PROJECT_LEARNER_DE_READ
       warehouse: BRAVE_WAREHOUSE
       database: BRAVE_DATABASE
-      schema: DE_PROJECT
+      schema: PROJECT_TEST
       threads: 4
       client_session_keep_alive: false
 
