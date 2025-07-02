@@ -1,0 +1,11 @@
+select 
+	INVENTORY_ID,
+	PRODUCT_ID,
+	WAREHOUSE_ID,
+	SUPPLIER_ID,
+	STORAGE_CONDITION,
+	SAFETY_STOCK_LEVEL,
+	RESTOCK_POINT,
+	UNIT_PRICE,
+	LAST_AUDIT_DATE
+from { { source('de_project', 'inventory_data') } }
