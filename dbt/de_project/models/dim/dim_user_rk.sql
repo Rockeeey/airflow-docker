@@ -9,4 +9,4 @@ SELECT user_id,
     marketing_opt_in,
     account_status,
     loyalty_points_balance
-FROM { { source('de_project', 'user_data') } }
+from {{ ref('stg_user_data_rk') }}

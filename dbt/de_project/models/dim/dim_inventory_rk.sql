@@ -8,4 +8,4 @@ select
 	RESTOCK_POINT,
 	UNIT_PRICE,
 	LAST_AUDIT_DATE
-from { { source('de_project', 'inventory_data') } }
+from {{ ref('stg_inventory_rk') }}

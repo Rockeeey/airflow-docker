@@ -6,4 +6,4 @@ select mkt_campaign,
        search_event_id,
        dbt_loaded_at
 
-from { { source('de_project', 'user_journey') } }
+from {{ ref('stg_user_journey_rk') }}

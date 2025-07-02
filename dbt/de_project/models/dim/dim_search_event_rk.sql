@@ -8,4 +8,4 @@ SELECT cart_id,
        search_type
        timestamp,
        dbt_load_timestamp
-from { { source('de_project', 'user_journey') } }
+from {{ ref('stg_user_journey_rk') }}

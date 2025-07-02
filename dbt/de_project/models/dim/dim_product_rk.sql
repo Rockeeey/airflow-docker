@@ -9,4 +9,4 @@ select product_id,
     rating,
     weight_grams,
     discount_percentage
-from { { source('de_project', 'product_data') } }
+from {{ ref('stg_product_rk') }}
